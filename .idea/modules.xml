@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActiveMQFailoverSample.iml" filepath="$PROJECT_DIR$/ActiveMQFailoverSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActiveMQFailoverSampleClient/ActiveMQFailoverSampleClient.iml" filepath="$PROJECT_DIR$/ActiveMQFailoverSampleClient/ActiveMQFailoverSampleClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActiveMQFailoverSampleDocker/ActiveMQFailoverSampleDocker.iml" filepath="$PROJECT_DIR$/ActiveMQFailoverSampleDocker/ActiveMQFailoverSampleDocker.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ActiveMQFailoverSampleClient:war">
+    <output-path>$PROJECT_DIR$/ActiveMQFailoverSampleClient/target</output-path>
+    <root id="archive" name="activemq-failover-client.war">
+      <element id="artifact" artifact-name="ActiveMQFailoverSampleClient:war exploded" />
+    </root>
+  </artifact>
+</component>

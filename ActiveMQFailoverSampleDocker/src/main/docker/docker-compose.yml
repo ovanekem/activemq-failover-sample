@@ -1,0 +1,37 @@
+version: '2'
+services:
+    amq-app:
+      build: ./app-server
+      ports:
+        - "80:8080"
+        - "9990:9990"
+        - "8787:8787"
+      depends_on:
+        - amq-broker1
+        - amq-broker2
+      links:
+        - amq-broker1:broker1
+        - amq-broker2:broker2
+        - amq-broker3:broker3
+    amq-broker1:
+      build: ./amq-server
+      links:
+        - amq-db:db
+      depends_on:
+        - amq-db
+    amq-broker2:
+      build: ./amq-server
+      links:
+        - amq-db:db
+      depends_on:
+        - amq-db
+    amq-broker3:
+      build: ./amq-server
+      links:
+        - amq-db:db
+      depends_on:
+        - amq-db
+    amq-db:
+      build: ./db-server
+
+
