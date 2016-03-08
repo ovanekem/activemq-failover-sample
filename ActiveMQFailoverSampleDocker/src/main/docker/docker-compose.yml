@@ -9,6 +9,7 @@ services:
       depends_on:
         - amq-broker1
         - amq-broker2
+        - amq-broker3
       links:
         - amq-broker1:broker1
         - amq-broker2:broker2

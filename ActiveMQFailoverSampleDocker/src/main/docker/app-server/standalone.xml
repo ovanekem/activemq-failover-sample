@@ -307,7 +307,7 @@
                         activemq
                     </config-property>
                     <config-property name="ServerUrl">
-                        tcp://broker1:61616
+                        failover:(tcp://broker1:61616,tcp://broker2:61616,tcp://broker3:61616)
                     </config-property>
                     <config-property name="useSessionArgs">true</config-property>
                     <connection-definitions>
